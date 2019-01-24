@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Андрей Vanzha](https://up.htmlacademy.ru/htmlcss/24/user/945117).
-* Наставник: `Дмитрий Батманов`.
+* Наставник: [Дмитрий Батманов](https://htmlacademy.ru/profile/id10964).
 
 ---
 
