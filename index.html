@@ -88,17 +88,28 @@
 	  <b>заинтересовались?</b>
 	  <span>укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</span>
 	  <form action="https://echo.htmlacademy.ru" method="post">
-	    <label for="date-in-field">дата заезда:</label>
-		  <input type="date" name="date-in" id="date-in-field">
-          <img src="img/calendar.svg" width="10" alt="календарик">
-	    <label for="date-out-field">дата выезда:</label>
-		  <input type="date" name="date-out" id="date-out-field">
-          <img src="img/calendar.svg" width="10" alt="календарик">
-	    <label for="adult-field">взрослые:</label>
-		  <input type="text" name="adult" id="adult-field">
-	    <label for="children-field">дети:</label>
-		  <input type="text" name="children" id="children-field">
-		  <button>найти</button>
+        <fieldset>
+          <legend>поиск гостиницы в седоне</legend>
+	      <p>
+	        <label for="date-in-field">дата заезда:</label>
+		    <input type="date" name="date-in" id="date-in-field">
+            <img src="img/calendar.svg" width="10" alt="календарик">
+		  </p>
+	      <p>
+ 	        <label for="date-out-field">дата выезда:</label>
+		    <input type="date" name="date-out" id="date-out-field">
+            <img src="img/calendar.svg" width="10" alt="календарик">
+	      </p>
+	      <p>
+	        <label for="adult-field">взрослые:</label>
+		    <input type="text" name="adult" id="adult-field">
+	      </p>
+	      <p>
+	        <label for="children-field">дети:</label>
+		    <input type="text" name="children" id="children-field">
+            <input type="submit" value="найти">
+	      </p>
+        </fieldset>
 	  </form>
 	  <map name="find_place">
 	    <area shape="rect" coords="0, 0, 402, 42" href="map.html" alt="карта города">
