@@ -80,12 +80,33 @@
 	  </form>
 
 	  <b>найдено:</b>
- 	  <p>сортировка</p>
-	  <p>по цене</p>
-	  <p>по типу</p>
-	  <p>по рейтингу</p>
-      <img src="img/icon-up-dir.svg" width="10" alt="стрелка вверх">
-      <img src="img/icon-down-dir.svg" width="10" alt="стрелка вниз">
+	  <form action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <legend>сортировка:</legend>
+		  <ul>
+		    <li>
+			  <input type="radio" name="price_choice" id="price_choice" checked>
+			  <label for="price_choice">
+			    <a href="#">по цене</a>
+			  </label>
+			</li>
+		    <li>
+			  <input type="radio" name="type_choice" id="type_choice">
+			  <label for="type_choice">
+			    <a href="#">по типу</a>
+			  </label>
+			</li>
+		    <li>
+			  <input type="radio" name="rating_choice" id="rating_choice">
+			  <label for="rating_choice">
+			    <a href="#">по рейтингу</a>
+			  </label>
+			</li>
+      <a href="#"><img src="img/icon-up-dir.svg" width="10" alt="стрелка вверх"></a>
+      <a href="#"><img src="img/icon-down-dir.svg" width="10" alt="стрелка вниз"></a>
+		    </ul>
+        </fieldset>
+	  </form>
     </section>
 
     <section class="hotels">
