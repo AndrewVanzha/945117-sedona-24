@@ -37,20 +37,20 @@
 	      <p class="topics-head-inv">настоящий городок</p>
 		    <p>&mdash; №1 &mdash;</p>
 		    <p class="topics-text-inv">седона - не аттракцион для туристов, там течет своя жизнь</p>
-		    <img src="iimg/layer-10.jpg" width="700" alt="picture 1">
+		    <img src="img/layer-10.jpg" width="700" alt="вид на горы">
 		    <ul class="advantages-details">
 		      <li>
-                  <img src="iimg/icon-1.svg" width="50" alt="эмблема домика">
+                  <img src="img/icon-1.svg" width="50" alt="эмблема домика">
 			      <p class="topics-head">жилье</p>
 			      <p class="topics-text">рекомендуем пожить в настоящем мотеле, все как в кино</p>
 			    </li>
 		      <li>
-                  <img src="iimg/icon-3.svg" width="50" alt="эмблема еды">
+                  <img src="img/icon-3.svg" width="50" alt="эмблема еды">
 			      <p class="topics-head">еда</p>
 			      <p class="topics-text">всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
 			    </li>
 		      <li>
-                  <img src="iimg/icon-2.svg" width="50" alt="эмблема подарка">
+                  <img src="img/icon-2.svg" width="50" alt="эмблема подарка">
 			      <p class="topics-head">сувениры</p>
 			      <p class="topics-text">не только китайского, но и местного производства</p>
 			    </li>
@@ -61,7 +61,7 @@
 	      <p class="topics-head-inv">там есть мост дьявола</p>
 		    <p>&mdash; №2 &mdash;</p>
 		    <p class="topics-text-inv">да, по нему можно пройти, если вы конечно осмелитесь</p>
-		    <img src="iimg/layer-5.jpg" width="700" alt="picture 2">
+		    <img src="img/layer-5.jpg" width="700" alt="карниз в горах">
 		    <ul class="advantages-details">
 		      <li>
 			      <p class="topics-head">небольшая площадь</p>
@@ -87,18 +87,49 @@
 	  <h2 class="visually-hidden">дата поездки и состав гостей</h2>
 	  <b>заинтересовались?</b>
 	  <span>укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</span>
-	  <form action="https://echo.htmlacademy.ru" method="post">
-	    <label for="date-in-field">дата заезда:</label>
+	  <h3>поиск гостиницы в седоне</h3>
+	  <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>поиск гостиницы в седоне</legend>
+	      <p>
+	        <label for="date-in-field">дата заезда:</label>
+		    <input type="date" name="date-in" id="date-in-field">
+            <img src="img/calendar.svg" width="10" alt="календарик">
+		  </p>
+	      <p>
+ 	        <label for="date-out-field">дата выезда:</label>
+		    <input type="date" name="date-out" id="date-out-field">
+            <img src="img/calendar.svg" width="10" alt="календарик">
+	      </p>
+	      <p>
+	        <label for="adult-field">взрослые:</label>
+		    <input type="text" name="adult" id="adult-field">
+	      </p>
+	      <p>
+	        <label for="children-field">дети:</label>
+		    <input type="text" name="children" id="children-field">
+            <input type="submit" value="найти">
+	      </p>
+        </fieldset>
+	    <p>
+	      <label for="date-in-field">дата заезда:</label>
 		  <input type="date" name="date-in" id="date-in-field">
           <img src="img/calendar.svg" width="10" alt="календарик">
-	    <label for="date-out-field">дата выезда:</label>
+		</p>
+	    <p>
+ 	      <label for="date-out-field">дата выезда:</label>
 		  <input type="date" name="date-out" id="date-out-field">
           <img src="img/calendar.svg" width="10" alt="календарик">
-	    <label for="adult-field">взрослые:</label>
+	    </p>
+	    <p>
+	      <label for="adult-field">взрослые:</label>
 		  <input type="text" name="adult" id="adult-field">
-	    <label for="children-field">дети:</label>
+	    </p>
+	    <p>
+	      <label for="children-field">дети:</label>
 		  <input type="text" name="children" id="children-field">
 		  <button>найти</button>
+	    </p>
 	  </form>
 	  <map name="find_place">
 	    <area shape="rect" coords="0, 0, 402, 42" href="map.html" alt="карта города">

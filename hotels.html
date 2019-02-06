@@ -21,23 +21,89 @@
 
 <main class="container">
   <h1 class="visually-hidden">Sedona Town</h1>
-    <section class="dwelling">
-	    <p>инфраструктура:</p>
-        <p>тип жилья:</p>
-        <p>стоимость в сутки (р):</p>
-        <p>от 0</p>
-	    <p>до 3000</p>
-    </section>
-
     <section class="found">
 	  <h2>выбранные объекты</h2>
+      <a href="#"><img src="img/filter-background.jpg" width="800" alt="вид на горы размытый"></a>
+	  <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+	      <legend>инфраструктура:</legend>
+	      <ul>
+	        <li>
+              <img src="img/checkbox-on.svg" width="20" alt="квадратик с галочкой">
+		      <input type="checkbox" name="waterpool" id="waterpool" checked>
+		      <label for="waterpool">бассейн</label>
+	        </li>
+	        <li>
+              <img src="img/checkbox-off.svg" width="20" alt="квадратик без галочки">
+		      <input type="checkbox" name="parking" id="parking">
+		      <label for="parking">парковка</label>
+	        </li>
+	        <li>
+              <img src="img/checkbox-off.svg" width="20" alt="квадратик без галочки">
+		      <input type="checkbox" name="wi-fi" id="wi-fi">
+		      <label for="wi-fi">wi-fi</label>
+	        </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>тип жилья:</legend>
+          <ul>
+	        <li>
+              <img src="img/checkbox-on.svg" width="20" alt="квадратик с галочкой">
+		      <input type="checkbox" name="hotel" id="hotel" checked>
+		      <label for="hotel">гостиница</label>
+	        </li>
+	        <li>
+              <img src="img/checkbox-on.svg" width="20" alt="квадратик с галочкой">
+		      <input type="checkbox" name="motel" id="motel" checked>
+		      <label for="motel">мотель</label>
+	        </li>
+	        <li>
+              <img src="img/checkbox-on.svg" width="20" alt="квадратик с галочкой">
+		      <input type="checkbox" name="apartments" id="apartments" checked>
+		      <label for="apartments">апартаменты</label>
+	        </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>стоимость в сутки (р):</legend>
+          <p>от 0</p>
+	      <p>до 3000</p>
+		  <input type="range" name="price" min="0" max="3000" value="2000">
+        </fieldset>
+        <input type="submit" value="показать">
+	  </form>
+
 	  <b>найдено:</b>
- 	  <p>сортировка</p>
-	  <p>по цене</p>
-	  <p>по типу</p>
-	  <p>по рейтингу</p>
-      <img src="iimg/icon-up-dir.svg" width="10" alt="стрелка вверх">
-      <img src="iimg/icon-down-dir.svg" width="10" alt="стрелка вниз">
+	  <form action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <legend>сортировка:</legend>
+		  <ul>
+		    <li>
+			  <input type="radio" name="price_choice" id="price_choice" checked>
+			  <label for="price_choice">
+			    <a href="#">по цене</a>
+			  </label>
+			</li>
+		    <li>
+			  <input type="radio" name="type_choice" id="type_choice">
+			  <label for="type_choice">
+			    <a href="#">по типу</a>
+			  </label>
+			</li>
+		    <li>
+			  <input type="radio" name="rating_choice" id="rating_choice">
+			  <label for="rating_choice">
+			    <a href="#">по рейтингу</a>
+			  </label>
+			</li>
+      <a href="#"><img src="img/icon-up-dir.svg" width="10" alt="стрелка вверх"></a>
+      <a href="#"><img src="img/icon-down-dir.svg" width="10" alt="стрелка вниз"></a>
+		  </ul>
+        </fieldset>
+	  </form>
     </section>
 
     <section class="hotels">
@@ -85,15 +151,15 @@
   <footer class="primary-footer group">
     <p class="footer-visit">#visitsedona</p>
     <ul class="footer-social">
-    <a class="social-button" href="#">
-      <img src="img/twitter.svg" width="30" alt="твиттер">twitter
-    </a>
-    <a class="social-button" href="#">
-      <img src="img/fb-icon.svg" width="30" alt="фейсбук">facebook
-    </a>
-    <a class="social-button" href="#">
-      <img src="img/youtube.svg" width="30" alt="инстаграм">instagram
-    </a>
+      <a class="social-button" href="#">
+        <img src="img/twitter.svg" width="30" alt="твиттер">twitter
+      </a>
+      <a class="social-button" href="#">
+        <img src="img/fb-icon.svg" width="30" alt="фейсбук">facebook
+      </a>
+      <a class="social-button" href="#">
+        <img src="img/youtube.svg" width="30" alt="инстаграм">instagram
+      </a>
     </ul>
     <div class="footer-copyright">
       <b>website by</b>
