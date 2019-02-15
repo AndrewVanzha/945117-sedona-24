@@ -2,7 +2,8 @@
 <html lang="ru">
 
 <head>
-  <title>HTML Academy: проект Седона index</title><!--правка 10.02 22:15-->
+  <title>HTML Academy: проект Седона index</title>
+  <!--правка 15.02 1:15-->
   <meta http-equiv="Content type" content="text/html; charset-utf-8">
   <meta name="description" content="project sedona">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,700i&amp;subset=cyrillic" rel="stylesheet">
@@ -13,27 +14,33 @@
 <body>
   <header class="main-header">
     <nav class="header-nav">
-      <a class="header-logo">
-        <img src="img/logo-sedona.svg" width="156" height="56" alt="Логотип Sedona Town">
-      </a>
+      <!--<div class="header-logo">-->
       <ul class="site-nav">
-        <li><a href="#">информация</a></li>
-        <li><a href="#">фото и видео</a></li>
-        <li><a href="#">карта штата</a></li>
-        <li><a href="hotels.html">гостиницы</a></li>
+        <li><a href="#"><p>информация</p></a></li>
+        <li><a href="#"><p>фото и видео</p></a></li>
+        <!--      <li><a href="#"><p class="visually-hidden">logo</p></a></li>-->
+        <li><a href="#"><img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Sedona Town"></a></li>
+        <!--    <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Sedona Town">-->
+        <li><a href="#"><p>карта штата</p></a></li>
+        <li><a href="hotels.html"><p>гостиницы</p></a></li>
       </ul>
     </nav>
 
-    <p class="back-pic"><img src="img/background-photo.jpg" alt="mountains"></p>
-    <img src="img/intro-welcome.svg" width="459" height="353" alt="приглашение">
-  </header>
+<!--    <p class="back-pic"><img src="img/background-photo.jpg" alt="mountains"></p>-->
+    <div class="back-pic">picture
+      <img class="intro-center" src="img/intro-welcome.svg" width="459" height="353" alt="приглашение">
+    </div>
+    <p class="topic-style topic-style-center">
+      седона - небольшой городок в аризоне,<br>
+      заслуживающий большего!
+    </p>
+    <p class="topic-text">рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+</header>
 
   <main class="container">
     <h1 class="visually-hidden">Достопримечательности и преимущества Седоны</h1>
 
     <section class="advantages">
-      <h2 class="topic-style topic-style-center">седона - небольшой городок в аризоне,<br>заслуживающий большего!</h2>
-      <p class="topic-text">рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
       <ul class="advantages-list">
         <li>
           <p class="topics-head-inv">настоящий городок</p>

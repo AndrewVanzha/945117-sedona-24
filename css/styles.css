@@ -11,38 +11,44 @@ body {
   color: #000;
   background-color: #eee;
   width: 1280px;
-  border: 1px dashed red;
+/*  border: 1px dashed red;*/
 }
-/*
+
+
 .main-header {
+  margin: 0 auto;
+  padding: 0;
   width: 1200px;
   height: 773px;
-  border: 1px dashed red;
+/*  border: 1px dashed red;*/
 }
-*/
+
 .header-nav {
   font-size: 14px;
   font-weight: bold;
   font-style: normal;
   color: #000;
   background-color: #fff;
-/*  text-align: center;*/
-/*  height: 12px;*/
+  text-align: center;
+  /*  height: 12px;*/
 }
 
+.visually-hidden {
+  display: none;
+}
+
+/*.header-logo {
+  color: #000;
+  background-color: #fff;
+  background-image: url("img/logo-sedona.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}*/
 .site-nav,
 .hotels-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
-/*  color: #000;
-  background-color: #fff;
-  background-image: url("img/background-photo.jpg");
-  background-position: 0 0;
-  background-repeat: no-repeat;*/
-/*  color: #000;
-  background-color: #ccc;
-  background-image: url("img/intro-welcome.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;*/
 }
 
 .site-nav a {
@@ -51,15 +57,46 @@ body {
   text-decoration: none;
 }
 
-.back-pick {
+.site-nav li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  height: 56px;
+  width: 238px;/*!239px*/
+  vertical-align: middle;/*?*/
+/*  border: 1px dashed red;*/
+}
+.site-nav li:nth-child(3) {
+  width: auto;
+}
+.site-nav li:first-child,
+.site-nav li:nth-child(2) {
+  float: left;
+}
+.site-nav li:nth-child(4),
+.site-nav li:last-child {
+  float: right;
+}
+.back-pic {
+  clear: both;
+  margin: 0 auto;
+  padding: 0;
   width: 1200px;
   height: 773px;
-  object-fit: contain;
-  background-color: #eee;
+/*  object-fit: contain;*/
+  color: #00f;
+/*  background-color: #2d2;
+  background-image: url("img/background-photo.jpg");
+  background-position: 1 57;
+  background-repeat: no-repeat;*/
+  background: url("html5.jpg") no-repeat #777;
+  border:  1px dashed #f0f;
 }
-
-.visually-hidden {
-  display: none;
+.intro-center {
+  display: block;
+  padding: 0;
+  margin: 0 auto;
+  padding-top: 76px; /* (132-56)px */
 }
 
 .topic-style {
@@ -68,6 +105,8 @@ body {
   font-weight: bold;
   line-height: 1.24;
   color: #000;
+  margin-top: -148px; /* 773-(140+353+132) */
+  height: 48px;
 }
 
 .topic-style-center {
@@ -79,6 +118,7 @@ body {
 }
 
 .topic-text {
+  margin-top: 38px;
   text-align: center;
   color: #333;
 }
@@ -96,7 +136,8 @@ body {
 .gallery-button {
   font-weight: bold;
   text-align: left;
-  color: #f00;/*должно быть #fff*/
+  color: #f00;
+  /*должно быть #fff*/
   text-decoration: none;
 }
 
