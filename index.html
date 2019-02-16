@@ -3,7 +3,7 @@
 
 <head>
   <title>HTML Academy: проект Седона index</title>
-  <!--правка 15.02 1:15-->
+  <!--правка 17.02 2:35-->
   <meta http-equiv="Content type" content="text/html; charset-utf-8">
   <meta name="description" content="project sedona">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,700i&amp;subset=cyrillic" rel="stylesheet">
@@ -14,28 +14,36 @@
 <body>
   <header class="main-header">
     <nav class="header-nav">
-      <!--<div class="header-logo">-->
-      <ul class="site-nav">
-        <li><a href="#"><p>информация</p></a></li>
-        <li><a href="#"><p>фото и видео</p></a></li>
-        <!--      <li><a href="#"><p class="visually-hidden">logo</p></a></li>-->
-        <li><a href="#"><img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Sedona Town"></a></li>
-        <!--    <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Sedona Town">-->
-        <li><a href="#"><p>карта штата</p></a></li>
-        <li><a href="hotels.html"><p>гостиницы</p></a></li>
-      </ul>
+      <div class="site-nav">
+        <div><a href="#">информация</a></div>
+        <div><a href="#">фото и видео</a></div>
+        <div class="img_logo"><a href="#">
+            <object type="image/svg+xml" data="img/logo-sedona.svg" width="140" height="71">
+              <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Sedona Town">
+            </object>
+          </a></div>
+        <div><a href="#">карта штата</a></div>
+        <div><a href="hotels.html">гостиницы</a></div>
+      </div>
     </nav>
 
-<!--    <p class="back-pic"><img src="img/background-photo.jpg" alt="mountains"></p>-->
-    <div class="back-pic">picture
+    <div class="back-pic">
       <img class="intro-center" src="img/intro-welcome.svg" width="459" height="353" alt="приглашение">
     </div>
-    <p class="topic-style topic-style-center">
+    <div class="zigzag_field">
+      <svg width="1200" height="58">
+        <polygon points="0,0 600,58 0,58" fill="white" />
+        <polygon points="300,0 600,58 300,58" fill="white" />
+        <polygon points="1200,0 1200,58 600,58" fill="white" />
+        <polygon points="900,0 900,58 600,58" fill="white" />
+      </svg>
+    </div>
+    <div class="announce-first">
       седона - небольшой городок в аризоне,<br>
       заслуживающий большего!
-    </p>
-    <p class="topic-text">рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
-</header>
+    </div>
+    <div class="announce-second">рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</div>
+  </header>
 
   <main class="container">
     <h1 class="visually-hidden">Достопримечательности и преимущества Седоны</h1>
