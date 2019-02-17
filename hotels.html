@@ -3,33 +3,35 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: проект Седона hotels</title><!--правка 15.02 2:15-->
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,700i&amp;subset=cyrillic" rel="stylesheet">
+  <title>HTML Academy: проект Седона hotels</title>
+  <!--правка 18.02 2:00-->
+  <!--<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,700i&amp;subset=cyrillic" rel="stylesheet">-->
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
-  <header class="main-header">
+  <header class="inner-header">
     <nav class="header-nav">
-      <a class="header-logo">
-        <img src="img/logo-sedona.svg" width="100" alt="Логотип Sedona Town">
-      </a>
-      <ul class="site-nav">
-        <li><a href="#">информация</a></li>
-        <li><a href="#">фото и видео</a></li>
-        <li><a href="#">карта штата</a></li>
-        <li><a href="hotels.html">гостиницы</a></li>
-      </ul>
+      <div class="site-nav">
+        <div><a href="#">информация</a></div>
+        <div><a href="#">фото и видео</a></div>
+        <div class="img_logo"><a href="#">
+            <object type="image/svg+xml" data="img/logo-sedona.svg" width="140" height="71">
+              <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Sedona Town">
+            </object>
+          </a></div>
+        <div><a href="#">карта штата</a></div>
+        <div><a href="hotels.html">гостиницы</a></div>
+      </div>
     </nav>
   </header>
 
   <main class="container">
     <h1 class="visually-hidden">Sedona Town</h1>
-    <section class="found">
+    <section class="objects-for-interest">
       <h2 class="visually-hidden">выбранные объекты</h2>
-      <a href="#"><img src="img/filter-background.jpg" width="800" alt="вид на горы размытый"></a>
-      <form action="https://echo.htmlacademy.ru" method="get">
+      <form action="https://echo.htmlacademy.ru" method="get" class="choice-interest">
         <fieldset>
           <legend>инфраструктура:</legend>
           <ul>
@@ -81,26 +83,26 @@
         <input type="submit" value="показать">
       </form>
 
-      <b class="topic-style topic-style-left">найдено:</b>
       <form action="https://echo.htmlacademy.ru" method="get">
+        <b class="topic-style topic-style-left">найдено:</b>
         <fieldset>
           <legend class="small-text">сортировка:</legend>
           <ul class="menu-choice">
             <li>
-              <input type="radio" name="price_choice" id="price_choice" checked>
-              <label for="price_choice">
+              <input type="radio" name="price-choice" id="price-choice" checked>
+              <label for="price-choice">
                 <a href="#">по цене</a>
               </label>
             </li>
             <li>
-              <input type="radio" name="type_choice" id="type_choice">
-              <label for="type_choice">
+              <input type="radio" name="type-choice" id="type-choice">
+              <label for="type-choice">
                 <a href="#">по типу</a>
               </label>
             </li>
             <li>
-              <input type="radio" name="rating_choice" id="rating_choice">
-              <label for="rating_choice">
+              <input type="radio" name="rating-choice" id="rating-choice">
+              <label for="rating-choice">
                 <a href="#">по рейтингу</a>
               </label>
             </li>
@@ -114,39 +116,63 @@
     <section class="hotels">
       <ul class="hotels-list">
         <li>
-          <a href="#"><img src="img/layer-21.jpg" width="135" height="90" alt="amara resort & spa"></a>
-          <h3 class="topic-style topic-style-left">amara resort & spa</h3>
-          <p class="gallery-text">гостиница</p>
-          <p class="gallery-text">от 4000р.</p>
-          <a href="#" class="button gallery-button gallery-button-back">подробнее</a>
-          <a href="#" class="button gallery-button gallery-button-next">забронировать</a>
-          <img src="img/star.svg" width="12" alt="звездочка">
-          <img src="img/star.svg" width="12" alt="звездочка">
-          <img src="img/star.svg" width="12" alt="звездочка">
-          <img src="img/star.svg" width="12" alt="звездочка">
+          <img src="img/layer-21.jpg" width="135" height="90" alt="amara resort & spa">
+          <div class="button-block">
+            <h3 class="bb-header topic-style topic-style-left">amara resort & spa</h3>
+            <p class="bb-text-1 gallery-text">гостиница</p>
+            <p class="bb-text-2 gallery-text">от 4000р.</p>
+            <form class="bb-hotel-detail" method="POST" action="https://echo.htmlacademy.ru">
+              <button class="button gallery-button-detail">подробнее</button>
+            </form>
+            <form class="bb-hotel-book" method="POST" action="https://echo.htmlacademy.ru">
+              <button class="button gallery-button-book">забронировать</button>
+            </form>
+          </div>
+          <div class="stars-block">
+            <img src="img/star.svg" width="12" alt="звездочка">
+            <img src="img/star.svg" width="12" alt="звездочка">
+            <img src="img/star.svg" width="12" alt="звездочка">
+            <img src="img/star.svg" width="12" alt="звездочка">
+          </div>
           <p class="rating-box">рейтинг: хх</p>
         </li>
         <li>
-          <a href="#"><img src="img/layer-89-copy.jpg" width="135" height="90" alt="desert quail inn"></a>
-          <h3 class="topic-style topic-style-left">desert quail inn</h3>
-          <p class="gallery-text">мотель</p>
-          <p class="gallery-text">от 3000р.</p>
-          <a href="#" class="button gallery-button gallery-button-back">подробнее</a>
-          <a href="#" class="button gallery-button gallery-button-next">забронировать</a>
-          <img src="img/star.svg" width="12" alt="звездочка">
-          <img src="img/star.svg" width="12" alt="звездочка">
-          <img src="img/star.svg" width="12" alt="звездочка">
-          <p class="rating-box">рейтинг: хх<p>
+          <img src="img/layer-89-copy.jpg" width="135" height="90" alt="desert quail inn">
+          <div class="button-block">
+            <h3 class="bb-header topic-style topic-style-left">desert quail inn</h3>
+            <p class="bb-text-1 gallery-text">мотель</p>
+            <p class="bb-text-2 gallery-text">от 3000р.</p>
+            <form class="bb-hotel-detail" method="POST" action="https://echo.htmlacademy.ru">
+              <button class="button gallery-button-detail">подробнее</button>
+            </form>
+            <form class="bb-hotel-book" method="POST" action="https://echo.htmlacademy.ru">
+              <button class="button gallery-button-book">забронировать</button>
+            </form>
+          </div>
+          <div class="stars-block">
+            <img src="img/star.svg" width="12" alt="звездочка">
+            <img src="img/star.svg" width="12" alt="звездочка">
+            <img src="img/star.svg" width="12" alt="звездочка">
+          </div>
+          <p class="rating-box">рейтинг: хх</p>
         </li>
         <li>
-          <a href="#"><img src="img/layer-22.jpg" width="135" height="90" alt="villas at poco diablo"></a>
-          <h3 class="topic-style topic-style-left">villas at poco diablo</h3>
-          <p class="gallery-text">апартаменты</p>
-          <p class="gallery-text">от 2000р.</p>
-          <a href="#" class="button gallery-button gallery-button-back">подробнее</a>
-          <a href="#" class="button gallery-button gallery-button-next">забронировать</a>
-          <img src="img/star.svg" width="12" alt="звездочка">
-          <img src="img/star.svg" width="12" alt="звездочка">
+          <img src="img/layer-22.jpg" width="135" height="90" alt="villas at poco diablo">
+          <div class="button-block">
+            <h3 class="bb-header topic-style topic-style-left">villas at poco diablo</h3>
+            <p class="bb-text-1 gallery-text">апартаменты</p>
+            <p class="bb-text-2 gallery-text">от 2000р.</p>
+            <form class="bb-hotel-detail" method="POST" action="https://echo.htmlacademy.ru">
+              <button class="button gallery-button-detail">подробнее</button>
+            </form>
+            <form class="bb-hotel-book" method="POST" action="https://echo.htmlacademy.ru">
+              <button class="button gallery-button-book">забронировать</button>
+            </form>
+          </div>
+          <div class="stars-block">
+            <img src="img/star.svg" width="12" alt="звездочка">
+            <img src="img/star.svg" width="12" alt="звездочка">
+          </div>
           <p class="rating-box">рейтинг: хх</p>
         </li>
       </ul>
