@@ -102,56 +102,77 @@
 
     <section class="interest">
       <h2 class="visually-hidden">дата поездки и состав гостей</h2>
-      <b>заинтересовались?</b>
-      <span>укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</span>
-      <h3>поиск гостиницы в седоне</h3>
-      <form action="https://echo.htmlacademy.ru" method="get">
-        <fieldset>
-          <legend>поиск гостиницы в седоне</legend>
-          <p>
-            <label for="date-in-field">дата заезда:</label>
-            <input type="date" name="date-in" id="date-in-field">
-            <img src="img/calendar.svg" width="10" alt="календарик">
-          </p>
-          <p>
-            <label for="date-out-field">дата выезда:</label>
-            <input type="date" name="date-out" id="date-out-field">
-            <img src="img/calendar.svg" width="10" alt="календарик">
-          </p>
-          <p>
-            <label for="adult-field">взрослые:</label>
-            <input type="text" name="adult" id="adult-field">
-          </p>
-          <p>
-            <label for="children-field">дети:</label>
-            <input type="text" name="children" id="children-field">
-            <input type="submit" value="найти">
-          </p>
-        </fieldset>
-      </form>
+      <p class="interest-box">
+        <b>заинтересовались?<br></b>
+        <span><br>укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</span>
+      </p>
+      <div class="hotel-find">
+        <h3 class="legend-text">
+          <p>поиск гостиницы в седоне</p>
+        </h3>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <div class="box-labels">
+            <p>дата заезда:</p>
+            <p>дата выезда:</p>
+            <p>взрослые:</p>
+          </div>
+          <fieldset class="box-inputes">
+            <div class="date-in-field-input">
+              <input type="text" name="date-in">
+              <input type="button" name="date-in-field-button">
+            </div>
+            <div class="date-out-field-input">
+              <input type="text" name="date-out">
+              <input type="button" name="date-in-field-button">
+            </div>
+            <div class="bottom-fields-input">
+              <input type="button" value="-">
+              <input type="number" class="adult-input" name="adult">
+              <input type="button" value="+">
+              <p>дети:</p>
+              <input type="button" value="-">
+              <input type="number" class="child-input" name="children">
+              <input type="button" value="+">
+            </div>
+          </fieldset>
+          <input type="submit" class="hotel-form-send" value="найти">
+        </form>
+      </div>
 
-      <map name="find_place">
-        <area shape="rect" coords="0, 0, 402, 42" href="map.html" alt="карта города">
-      </map>
+      <div class="map-box">
+        <map name="find_place">
+          <area shape="rect" coords="0, 0, 402, 42" href="map.html" alt="карта города">
+        </map>
+      </div>
     </section>
   </main>
 
   <footer class="main-footer">
-    <p class="topic-style topic-style-center">#visitsedona</p>
-    <ul class="footer-social">
-      <a class="social-button" href="#">
-        <img src="img/twitter.svg" width="17" height="15" alt="твиттер">
-      </a>
-      <a class="social-button" href="#">
-        <img src="img/fb-icon.svg" width="12" height="22" alt="фейсбук">
-      </a>
-      <a class="social-button" href="#">
-        <img src="img/youtube.svg" width="20" height="16" alt="инстаграм">
-      </a>
-    </ul>
-    <div class="footer-copyright">
-      <b>website by</b>
-      <a class="button" href="https://htmlacademy.ru">
+    <div class="visit-box">
+      <p class="topic-style">#visitsedona</p>
+    </div>
+    <div class="social-block">
+      <div class="social-box">
+        <a class="social-button b-twitter" href="#">
+          <img src="img/twitter.svg" width="17" height="15" alt="твиттер">
+        </a>
+      </div>
+      <div class="social-box">
+        <a class="social-button b-facebook" href="#">
+          <img src="img/fb-icon.svg" width="12" height="22" alt="фейсбук">
+        </a>
+      </div>
+      <div class="social-box">
+        <a class="social-button b-youtube" href="#">
+          <img src="img/youtube.svg" width="20" height="16" alt="ютуб">
+        </a>
+      </div>
+    </div>
+    <div class="web-box">
+      <p>website by</p>
+    </div>
+    <div class="copyright-box">
+      <a href="https://htmlacademy.ru">
         <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="htmlacademy">
       </a>
     </div>
