@@ -57,8 +57,8 @@ body {
   width: 239px;
 }
 
-.img_logo {
-  width: 244px;
+.img-logo {
+  width: 142px;
   height: 71px;
   background-color: transparent;
 }
@@ -67,13 +67,14 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.site-nav {
   height: 56px;
   display: flex;
-  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
+}
+
+.site-nav>li {
+  display: block;
 }
 
 .back-pic {
@@ -95,7 +96,7 @@ body {
   padding-top: 76px;
 }
 
-.zigzag-field {
+.dent-field {
   width: auto;
   height: 59px;
   padding: 0;
@@ -114,7 +115,7 @@ body {
   margin: 0 auto;
   padding: 0;
   padding-top: 61px;
-  font-family: PTSans-Bold;
+  font-family: "PTSans-Bold";
   font-size: 21px;
   font-weight: bold;
   line-height: 1.24;
@@ -195,9 +196,7 @@ body {
 
 .hotel-block-env {
   height: 97px;
-  /*90*/
   width: 270px;
-  /*258*/
   margin: 0;
   margin-left: 30px;
   padding: 0;
@@ -212,14 +211,14 @@ body {
   flex-wrap: wrap;
 }
 
-.hotel-block>h3 {
+.hotel-title {
   padding: 0;
   margin: 0;
   width: 270px;
 }
 
 .topic-style {
-  font-family: PTSans-Bold;
+  font-family: "PTSans-Bold";
   font-size: 21px;
   font-weight: bold;
   color: rgba(0, 0, 0, 1);
@@ -360,14 +359,14 @@ body {
   background-color: rgba(255, 255, 255, 1);
 }
 
-.legend-text {
+.legend-title {
   margin: 0;
   padding: 0px 0;
   height: 86px;
   width: 100%;
 }
 
-.legend-text>p {
+.legend-text {
   margin: 0;
   padding: 32px 0;
   font-size: 18px;
@@ -563,7 +562,7 @@ body {
 
 .b-facebook {
   margin: 0;
-  padding: 5px 10px 5px 10px;
+  padding: 5px 8px 5px 12px;
 }
 
 .b-youtube {

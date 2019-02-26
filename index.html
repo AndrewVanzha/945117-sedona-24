@@ -14,23 +14,33 @@
 <body>
   <header class="main-header">
     <nav class="header-nav">
-      <div class="site-nav">
-        <div><a href="#">информация</a></div>
-        <div><a href="#">фото и видео</a></div>
-        <div class="img_logo"><a href="#">
-            <object type="image/svg+xml" data="img/logo-sedona.svg" width="140" height="71">
+      <ul class="site-nav">
+        <li>
+          <a href="#">информация</a>
+        </li>
+        <li>
+          <a href="#">фото и видео</a>
+        </li>
+        <li class="img-logo">
+          <a href="#">
+            <object data="img/logo-sedona.svg" width="140" height="71">
               <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Sedona Town">
             </object>
-          </a></div>
-        <div><a href="#">карта штата</a></div>
-        <div><a href="hotels.html">гостиницы</a></div>
-      </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">карта штата</a>
+        </li>
+        <li>
+          <a href="hotels.html">гостиницы</a>
+        </li>
+      </ul>
     </nav>
 
     <div class="back-pic">
       <img class="intro-center" src="img/intro-welcome.svg" width="459" height="353" alt="приглашение">
     </div>
-    <div class="zigzag-field">
+    <div class="dent-field">
       <svg width="1200" height="58">
         <polygon points="0,0 600,58 0,58" fill="white" />
         <polygon points="300,0 600,58 300,58" fill="white" />
@@ -38,11 +48,11 @@
         <polygon points="900,0 900,58 600,58" fill="white" />
       </svg>
     </div>
-    <div class="announce-first">
+    <p class="announce-first">
       седона - небольшой городок в аризоне,<br>
       заслуживающий большего!
-    </div>
-    <div class="announce-second">рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</div>
+    </p>
+    <p class="announce-second">рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
   </header>
 
   <main class="container">
@@ -107,8 +117,8 @@
         <span><br>укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</span>
       </p>
       <div class="hotel-find">
-        <h3 class="legend-text">
-          <p>поиск гостиницы в седоне</p>
+        <h3 class="legend-title">
+          <p class="legend-text">поиск гостиницы в седоне</p>
         </h3>
         <form action="https://echo.htmlacademy.ru" method="get">
           <div class="box-labels">
