@@ -33,7 +33,7 @@ body {
 }
 
 .header-nav {
-  height: 56px;
+  min-height: 56px;
   font-size: 14px;
   font-weight: bold;
   font-style: normal;
@@ -44,23 +44,6 @@ body {
 
 .visually-hidden {
   display: none;
-}
-
-.site-nav a {
-  height: 56px;
-  color: rgba(0, 0, 0, 1);
-  background-color: transparent;
-  text-decoration: none;
-}
-
-.site-nav div {
-  width: 239px;
-}
-
-.img-logo {
-  width: 142px;
-  height: 71px;
-  background-color: transparent;
 }
 
 .site-nav {
@@ -77,8 +60,23 @@ body {
   display: block;
 }
 
+.site-nav a {
+  height: 56px;
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+
+.site-nav div {
+  width: 239px;
+}
+
+.img-logo {
+  width: 142px;
+  height: 71px;
+  background-color: transparent;
+}
+
 .back-pic {
-  clear: both;
   margin: 0 auto;
   padding: 0;
   width: 1200px;
@@ -115,7 +113,7 @@ body {
   margin: 0 auto;
   padding: 0;
   padding-top: 61px;
-  font-family: "PTSans-Bold";
+  font-family: "PTSans-Bold", Arial, Helvetica, sans-serif;
   font-size: 21px;
   font-weight: bold;
   line-height: 1.24;
@@ -194,16 +192,11 @@ body {
   height: 97px;
 }
 
-.hotel-block-env {
+.hotel-block {
   height: 97px;
   width: 270px;
   margin: 0;
   margin-left: 30px;
-  padding: 0;
-}
-
-.hotel-block {
-  margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -218,26 +211,24 @@ body {
 }
 
 .topic-style {
-  font-family: "PTSans-Bold";
+  font-family: "PTSans-Bold", Arial, Helvetica, sans-serif;
   font-size: 21px;
   font-weight: bold;
   color: rgba(0, 0, 0, 1);
-}
-
-.topic-style-center {
-  text-align: center;
 }
 
 .topic-style-left {
   text-align: left;
 }
 
-.hotel-box {
+.hotel-text {
   margin: 0;
   margin-top: 13px;
   padding: 0;
   height: 11px;
   width: 115px;
+  text-align: left;
+  color: rgba(51, 51, 51, 1);
 }
 
 .hotel-price {
@@ -245,19 +236,17 @@ body {
   width: 147px;
 }
 
-.gallery-text {
-  padding: 0;
-  margin: 0;
-  text-align: left;
-  color: rgba(51, 51, 51, 1);
-}
-
 .actions-box {
+  display: block;
   margin: 0;
   margin-top: 19px;
-  padding: 0;
+  padding: 7px 0;
   width: 115px;
+  text-align: center;
   background-color: rgba(136, 172, 192, 1);
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .book-box {
@@ -266,33 +255,8 @@ body {
   background-color: rgba(66, 47, 49, 1);
 }
 
-.actions-box p {
-  margin: 0;
-  padding: 7px 0;
-  text-align: center;
-  background-color: rgba(136, 172, 192, 1);
-}
-
-.actions-box a {
-  display: inline;
-  margin: 0;
-  color: rgba(255, 255, 255, 1);
-  font-weight: bold;
-  text-decoration: none;
-}
-
 .book-box p {
   background-color: rgba(66, 47, 49, 1);
-}
-
-.button {
-  height: 27px;
-  text-align: center;
-  color: rgba(255, 255, 255, 1);
-  padding-left: 17px;
-  padding-right: 16px;
-  vertical-align: middle;
-  border: none;
 }
 
 .ratings-block {
@@ -313,7 +277,7 @@ body {
   margin: 0;
   margin-top: 63px;
   margin-left: 500px;
-  padding: 0;
+  padding: 5px 0 6px 0;
   width: 110px;
   text-align: center;
   color: rgba(0, 0, 0, 1);
@@ -339,11 +303,15 @@ body {
 }
 
 .interest-box b {
+  display: block;
   font-size: 30px;
   font-weight: bold;
 }
 
 .interest-box span {
+  display: block;
+  margin: 0;
+  margin-top: 20px;
   line-height: 20px;
 }
 
@@ -376,38 +344,28 @@ body {
   background-color: rgba(118, 99, 87, 1);
 }
 
-.box-labels {
-  margin: 69px 0 67px 55px;
+.box-input {
+  margin: 0 auto;
+  margin-top: 52px;
+  padding: 0;
+  height: 174px;
+  width: 452px;
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border: none;
+}
+
+.box-input label {
+  display: block;
   width: 95px;
-  display: inline-block;
-}
-
-.box-labels p:first-child {
   margin: 0;
   padding: 0;
 }
 
-.box-labels p:nth-child(2) {
-  margin: 0;
-  margin-top: 55px;
-  padding: 0;
-}
-
-.box-labels p:last-child {
-  margin: 0;
-  margin-top: 56px;
-  padding: 0;
-}
-
-.box-inputes {
-  margin: 0;
-  margin-left: 8px;
-  padding: 0;
-  display: inline-block;
-  border: none;
-}
-
-.date-in-field-input {
+.input-date-block {
   margin: 0;
   padding: 0;
   width: 346px;
@@ -415,19 +373,7 @@ body {
   background-color: rgba(242, 242, 242, 1);
 }
 
-.date-out-field-input {
-  margin: 0;
-  padding: 0;
-  margin-top: 22px;
-  width: 346px;
-  height: 44px;
-  width: 346px;
-  border: none;
-  background-color: rgba(242, 242, 242, 1);
-}
-
-.date-in-field-input input[type="text"],
-.date-out-field-input input[type="text"] {
+.input-date-block input[type="text"] {
   display: inline-block;
   margin: 0;
   padding: 14px 0 12px 0;
@@ -438,34 +384,52 @@ body {
   font-size: 12px;
 }
 
-.date-in-field-input input[type="button"],
-.date-out-field-input input[type="button"] {
+.input-date-block img {
   display: inline-block;
   margin: 0;
   margin-left: 1px;
   padding: 0;
-  width: 21px;
-  height: 22px;
   border: none;
   outline: none;
   vertical-align: middle;
-  background-image: url("../img/calendar.svg");
-  background-position: 0;
-  background-repeat: no-repeat;
   color: rgba(0, 0, 0, 1);
   background-color: rgba(169, 169, 169, 1);
 }
 
-.bottom-fields-input {
+.adult-label {
+  width: 95px;
   margin: 0;
-  margin-top: 24px;
-  width: 346px;
+  padding: 0;
+  text-align: left;
+}
+
+.child-label {
+  width: 105px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.count-fields-input {
+  margin: 0;
+  width: 121px;
   padding: 0;
   border: none;
   background-color: rgba(242, 242, 242, 1);
 }
 
-.bottom-fields-input input[type="button"] {
+.button {
+  height: 27px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  padding-left: 17px;
+  padding-right: 16px;
+  vertical-align: middle;
+  border: none;
+  outline: none;
+}
+
+.count-fields-input input[type="button"] {
   display: inline-block;
   height: 38px;
   width: 38px;
@@ -485,28 +449,19 @@ body {
   background-color: rgba(242, 242, 242, 1);
 }
 
-.bottom-fields-input p {
-  display: inline-block;
-  margin: 0;
-  padding: 14px 0 12px 0;
-  width: 95px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 1);
-}
-
 .hotel-form-send {
   display: block;
   margin: 54px 0 0 55px;
   padding: 17px 0 22px 0;
   height: 58px;
-  width: 458px;
+  width: 452px;
   color: rgb(255, 255, 255, 1);
   background-color: rgba(129, 179, 210, 1);
   font-size: 21px;
   font-weight: bold;
   text-align: center;
-  outline: none;
   border: none;
+  outline: none;
 }
 
 .map-box {
@@ -571,11 +526,6 @@ body {
 }
 
 .copyright-block {
-  margin: 0;
-  padding: 0;
-}
-
-.web-block {
   margin: 0;
   padding: 0;
   display: flex;

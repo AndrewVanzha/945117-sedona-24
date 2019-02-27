@@ -3,7 +3,7 @@
 
 <head>
   <title>HTML Academy: проект Седона index</title>
-  <!--правка 20.02 2:30-->
+  <!--правка 27.02 21:30-->
   <meta http-equiv="Content type" content="text/html; charset-utf-8">
   <meta name="description" content="project sedona">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,700i&amp;subset=cyrillic" rel="stylesheet">
@@ -112,39 +112,39 @@
 
     <section class="interest">
       <h2 class="visually-hidden">дата поездки и состав гостей</h2>
-      <p class="interest-box">
-        <b>заинтересовались?<br></b>
-        <span><br>укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</span>
-      </p>
+      <div class="interest-box">
+        <b>заинтересовались?</b>
+        <span>укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</span>
+      </div>
       <div class="hotel-find">
         <h3 class="legend-title">
           <p class="legend-text">поиск гостиницы в седоне</p>
         </h3>
         <form action="https://echo.htmlacademy.ru" method="get">
-          <div class="box-labels">
-            <p>дата заезда:</p>
-            <p>дата выезда:</p>
-            <p>взрослые:</p>
-          </div>
-          <fieldset class="box-inputes">
-            <div class="date-in-field-input">
-              <input type="text" name="date-in">
-              <input type="button" name="date-in-field-button">
+          <div class="box-input">
+            <label for="date-in">дата заезда:</label>
+            <div class="input-date-block">
+              <input type="text" name="date-in" id="date-in">
+              <img src="img/calendar.svg" width="21" height="22" no-repeat>
             </div>
-            <div class="date-out-field-input">
-              <input type="text" name="date-out">
-              <input type="button" name="date-in-field-button">
+            <label for="date-out">дата выезда:</label>
+            <div class="input-date-block">
+              <input type="text" name="date-out" id="date-out">
+              <img src="img/calendar.svg" width="21" height="22" no-repeat>
             </div>
-            <div class="bottom-fields-input">
+            <p class="adult-label">взрослые:</p>
+            <div class="count-fields-input">
               <input type="button" value="-">
               <input type="number" class="adult-input" name="adult">
               <input type="button" value="+">
-              <p>дети:</p>
+            </div>
+            <p class="child-label">дети:</p>
+            <div class="count-fields-input">
               <input type="button" value="-">
               <input type="number" class="child-input" name="children">
               <input type="button" value="+">
             </div>
-          </fieldset>
+          </div>
           <input type="submit" class="hotel-form-send" value="найти">
         </form>
       </div>
@@ -177,12 +177,10 @@
       </div>
     </div>
     <div class="copyright-block">
-      <div class="web-block">
-        <p class="web-box">website by</p>
-        <a class="copyright-box" href="https://htmlacademy.ru">
-          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="htmlacademy">
-        </a>
-      </div>
+      <p class="web-box">website by</p>
+      <a class="copyright-box" href="https://htmlacademy.ru">
+        <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="htmlacademy">
+      </a>
     </div>
   </footer>
 
