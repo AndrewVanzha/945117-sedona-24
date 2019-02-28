@@ -79,7 +79,7 @@ body {
 .back-pic {
   margin: 0 auto;
   padding: 0;
-  width: 1200px;
+  width: auto;
   height: 717px;
   color: rgba(256, 256, 256, 1);
   background-color: rgba(0, 0, 0, 1);
@@ -141,7 +141,7 @@ body {
 .choice-interest {
   margin: 0 auto;
   padding: 0;
-  width: 1200px;
+  width: auto;
   color: rgba(256, 256, 256, 1);
 }
 
@@ -275,7 +275,7 @@ body {
 
 .rating-box {
   margin: 0;
-  margin-top: 63px;
+  margin-top: 53px;
   margin-left: 500px;
   padding: 5px 0 6px 0;
   width: 110px;
@@ -288,7 +288,7 @@ body {
   margin: 0 auto;
   margin-top: 57px;
   padding: 0;
-  max-width: 100%;
+  width: auto;
   background-color: rgba(255, 255, 255, 1);
 }
 
@@ -319,8 +319,7 @@ body {
   margin: 0 auto;
   margin-top: 52px;
   padding: 0;
-  height: 481px;
-  width: 568px;
+  width: auto;
   font-size: 12px;
   font-weight: bold;
   color: rgba(0, 0, 0, 1);
@@ -328,15 +327,9 @@ body {
 }
 
 .legend-title {
-  margin: 0;
-  padding: 0px 0;
-  height: 86px;
-  width: 100%;
-}
-
-.legend-text {
-  margin: 0;
+  margin: 0 auto;
   padding: 32px 0;
+  width: 568px;
   font-size: 18px;
   font-weight: bold;
   text-align: center;
@@ -344,11 +337,30 @@ body {
   background-color: rgba(118, 99, 87, 1);
 }
 
+.choice-block {
+  margin: 0;
+  padding: 0;
+  height: 473px;
+  width: auto;
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  background-position: 0 0px;
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.choice-form {
+  margin: 0 auto;
+  padding: 0;
+  width: 568px;
+  height: 395px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
 .box-input {
   margin: 0 auto;
-  margin-top: 52px;
-  padding: 0;
-  height: 174px;
+  padding: 55px;
+  height: 173px;
   width: 452px;
   display: flex;
   justify-content: center;
@@ -356,6 +368,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   border: none;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .box-input label {
@@ -429,8 +442,9 @@ body {
   outline: none;
 }
 
-.count-fields-input input[type="button"] {
+.button-sign {
   display: inline-block;
+  margin: 0;
   height: 38px;
   width: 38px;
   border: none;
@@ -451,9 +465,8 @@ body {
 
 .hotel-form-send {
   display: block;
-  margin: 54px 0 0 55px;
+  margin: 0 auto;
   padding: 17px 0 22px 0;
-  height: 58px;
   width: 452px;
   color: rgb(255, 255, 255, 1);
   background-color: rgba(129, 179, 210, 1);
@@ -464,20 +477,15 @@ body {
   outline: none;
 }
 
-.map-box {
-  height: 50px;
-  width: auto;
-}
-
 .main-footer {
   margin: 0 auto;
   padding: 0;
+  width: 1200px;
+  height: 120px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: nowrap;
-  width: 1200px;
-  height: 120px;
   background-color: rgba(255, 255, 255, 1);
 }
 
@@ -502,6 +510,8 @@ body {
   height: 36px;
   width: 36px;
   background-color: rgba(129, 179, 210, 1);
+  text-decoration: none;
+  list-style: none;
 }
 
 .social-button {
