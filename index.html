@@ -3,7 +3,6 @@
 
 <head>
   <title>HTML Academy: проект Седона index</title>
-  <!--правка 27.02 21:30-->
   <meta http-equiv="Content type" content="text/html; charset-utf-8">
   <meta name="description" content="project sedona">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,700i&amp;subset=cyrillic" rel="stylesheet">
@@ -59,53 +58,59 @@
     <h1 class="visually-hidden">Достопримечательности и преимущества Седоны</h1>
 
     <section class="advantages">
-      <ul class="advantages-list">
-        <li>
-          <p class="topics-head-inv">настоящий городок</p>
-          <p>&mdash; №1 &mdash;</p>
-          <p class="topics-text-inv">седона - не аттракцион для туристов, там течет своя жизнь</p>
-          <img src="img/layer-10.jpg" width="700" alt="вид на горы">
-          <ul class="advantages-details">
-            <li>
-              <img src="img/icon-1.svg" width="50" alt="эмблема домика">
-              <p class="topics-head">жилье</p>
-              <p class="topics-text">рекомендуем пожить в настоящем мотеле, все как в кино</p>
-            </li>
-            <li>
-              <img src="img/icon-3.svg" width="50" alt="эмблема еды">
-              <p class="topics-head">еда</p>
-              <p class="topics-text">всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
-            </li>
-            <li>
-              <img src="img/icon-2.svg" width="50" alt="эмблема подарка">
-              <p class="topics-head">сувениры</p>
-              <p class="topics-text">не только китайского, но и местного производства</p>
-            </li>
-          </ul>
+      <ul>
+        <li class="advantages-list">
+          <div class="advantages-box">
+            <p class="adv-box-1">настоящий<br>городок</p>
+            <p class="adv-box-2">&mdash; №1 &mdash;</p>
+            <p class="adv-box-3">седона - не аттракцион для туристов,<br>там течет своя жизнь</p>
+          </div>
+          <img src="img/layer-10.jpg" width="800" height="256" alt="вид на здания">
         </li>
 
-        <li>
-          <p class="topics-head-inv">там есть мост дьявола</p>
-          <p>&mdash; №2 &mdash;</p>
-          <p class="topics-text-inv">да, по нему можно пройти, если вы конечно осмелитесь</p>
-          <img src="img/layer-5.jpg" width="700" alt="карниз в горах">
-          <ul class="advantages-details">
-            <li>
-              <p class="topics-head">небольшая площадь</p>
-              <p class="topics-text">&mdash; №3 &mdash;</p>
-              <p class="topics-text">все достопримечательности находятся очень близко</p>
-            </li>
-            <li>
-              <p class="topics-head">красивая дорога</p>
-              <p class="topics-text">&mdash; №4 &mdash;</p>
-              <p class="topics-text">ехать в седону из лас-вегаса совсем не скучно</p>
-            </li>
-            <li>
-              <p class="topics-head">мало туристов</p>
-              <p class="topics-text">&mdash; №5 &mdash;</p>
-              <p class="topics-text">большинство едет в гранд каньон и толпится там</p>
-            </li>
-          </ul>
+        <li class="advantages-list">
+          <div class="advantages-details icon-block">
+            <img class="adv-icon" src="img/icon-1.svg" width="75" height="75" alt="эмблема домика">
+            <p class="adv-head adv-head-text">жилье</p>
+            <p class="adv-comment adv-comment-text">рекомендуем пожить в настоящем<br>мотеле, все как в кино</p>
+          </div>
+          <div class="advantages-details icon-block">
+            <img class="adv-icon" src="img/icon-3.svg" width="75" height="75" alt="эмблема еды">
+            <p class="adv-head adv-head-text">еда</p>
+            <p class="adv-comment adv-comment-text">всегда заказывайте фирменный<br>бургер, вы не разочаруетесь</p>
+          </div>
+          <div class="advantages-details icon-block">
+            <img class="adv-icon" src="img/icon-2.svg" width="75" height="75" alt="эмблема подарка">
+            <p class="adv-head adv-head-text">сувениры</p>
+            <p class="adv-comment adv-comment-text">не только китайского, но и<br>местного производства</p>
+          </div>
+        </li>
+
+        <li class="advantages-list">
+          <img src="img/layer-5.jpg" width="800" height="256" alt="карниз в горах">
+          <div class="advantages-box">
+            <p class="adv-box-1">там есть<br>мост дьявола</p>
+            <p class="adv-box-2">&mdash; №2 &mdash;</p>
+            <p class="adv-box-3">да, по нему можно пройти, если вы<br>конечно осмелитесь</p>
+          </div>
+        </li>
+
+        <li class="addition-adv advantages-list">
+          <div class="advantages-details">
+            <p class="environ-head adv-head-text">небольшая площадь</p>
+            <p class="environ-text adv-comment-text">&mdash; №3 &mdash;</p>
+            <p class="environ-text adv-comment-text">все достопримечательности<br>находятся очень близко</p>
+          </div>
+          <div class="advantages-details">
+            <p class="environ-head adv-head-text">красивая дорога</p>
+            <p class="environ-text adv-comment-text">&mdash; №4 &mdash;</p>
+            <p class="environ-text adv-comment-text">ехать в седону из лас-вегаса<br>совсем не скучно</p>
+          </div>
+          <div class="advantages-details">
+            <p class="environ-head adv-head-text">мало туристов</p>
+            <p class="environ-text adv-comm-text">&mdash; №5 &mdash;</p>
+            <p class="environ-text adv-comm-text">большинство едет в<br>гранд каньон и толпится там</p>
+          </div>
         </li>
       </ul>
     </section>
@@ -116,7 +121,7 @@
         <b>заинтересовались?</b>
         <span>укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</span>
       </div>
-      <div class="hotel-find">
+      <div class="hotel-find-interest">
         <h3 class="legend-title">поиск гостиницы в седоне</h3>
         <div class="choice-block">
           <form class="choice-form" action="https://echo.htmlacademy.ru" method="get">
@@ -151,8 +156,6 @@
     </section>
 
     <section class="map-box">
-      <!--   <img src="img/map.png" width="1200" height="473" alt="карта города">-->
-
     </section>
   </main>
 

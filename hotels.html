@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: проект Седона hotels</title>
-  <!--правка 27.02 21:30-->
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,700i&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
@@ -28,7 +27,7 @@
           </a>
         </li>
         <li>
-          <a href="#">карта штата</a>
+          <a href="index.html">карта штата</a>
         </li>
         <li>
           <a href="hotels.html">гостиницы</a>
@@ -41,89 +40,88 @@
     <h1 class="visually-hidden">Sedona Town</h1>
     <section class="objects-for-interest">
       <h2 class="visually-hidden">выбранные объекты</h2>
-      <form action="https://echo.htmlacademy.ru" method="get" class="choice-interest">
-        <fieldset>
-          <legend>инфраструктура:</legend>
-          <ul>
+      <form class="choice-interest" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="infrastructure-block">
+          <p>инфраструктура:</p>
+          <ul class="infrastructure-list">
             <li>
-              <img src="img/checkbox-on.svg" width="20" alt="квадратик с галочкой">
+              <img src="img/checkbox-on.svg" width="27" alt="квадратик с галочкой">
               <input type="checkbox" name="waterpool" id="waterpool" checked>
               <label for="waterpool">бассейн</label>
             </li>
             <li>
-              <img src="img/checkbox-off.svg" width="20" alt="квадратик без галочки">
+              <img src="img/checkbox-off.svg" width="27" alt="квадратик без галочки">
               <input type="checkbox" name="parking" id="parking">
               <label for="parking">парковка</label>
             </li>
             <li>
-              <img src="img/checkbox-off.svg" width="20" alt="квадратик без галочки">
+              <img src="img/checkbox-off.svg" width="27" alt="квадратик без галочки">
               <input type="checkbox" name="wi-fi" id="wi-fi">
               <label for="wi-fi">wi-fi</label>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset>
-          <legend>тип жилья:</legend>
-          <ul>
+        <fieldset class="dwelling-block">
+          <p>тип жилья:</p>
+          <ul class="dwelling-list">
             <li>
-              <img src="img/checkbox-on.svg" width="20" alt="квадратик с галочкой">
+              <img src="img/checkbox-on.svg" width="27" alt="квадратик с галочкой">
               <input type="checkbox" name="hotel" id="hotel" checked>
               <label for="hotel">гостиница</label>
             </li>
             <li>
-              <img src="img/checkbox-on.svg" width="20" alt="квадратик с галочкой">
+              <img src="img/checkbox-on.svg" width="27" alt="квадратик с галочкой">
               <input type="checkbox" name="motel" id="motel" checked>
               <label for="motel">мотель</label>
             </li>
             <li>
-              <img src="img/checkbox-on.svg" width="20" alt="квадратик с галочкой">
+              <img src="img/checkbox-on.svg" width="27" alt="квадратик с галочкой">
               <input type="checkbox" name="apartments" id="apartments" checked>
               <label for="apartments">апартаменты</label>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset>
-          <legend>стоимость в сутки (р):</legend>
-          <p>от 0</p>
-          <p>до 3000</p>
-          <input type="range" name="price" min="0" max="3000" value="2000">
-        </fieldset>
-        <input type="submit" value="показать">
-      </form>
-
-      <form action="https://echo.htmlacademy.ru" method="get">
-        <b class="topic-style topic-style-left">найдено:</b>
-        <fieldset>
-          <legend class="small-text">сортировка:</legend>
-          <ul class="menu-choice">
-            <li>
-              <input type="radio" name="price-choice" id="price-choice" checked>
-              <label for="price-choice">
-                <a href="#">по цене</a>
-              </label>
-            </li>
-            <li>
-              <input type="radio" name="type-choice" id="type-choice">
-              <label for="type-choice">
-                <a href="#">по типу</a>
-              </label>
-            </li>
-            <li>
-              <input type="radio" name="rating-choice" id="rating-choice">
-              <label for="rating-choice">
-                <a href="#">по рейтингу</a>
-              </label>
-            </li>
-            <a href="#"><img src="img/icon-up-dir.svg" width="10" alt="стрелка вверх"></a>
-            <a href="#"><img src="img/icon-down-dir.svg" width="10" alt="стрелка вниз"></a>
-          </ul>
+        <fieldset class="price-block">
+          <p>стоимость в сутки (р):</p>
+          <div class="price-range-box">
+            <p class="price-range-box-left">от 0</p>
+            <p class="price-range-box-right">до 3000</p>
+          </div>
+          <input class="price-move" type="range" name="price" min="0" max="3000" value="2000">
+          <div class="button-show-box">
+            <input type="submit" value="показать">
+          </div>
         </fieldset>
       </form>
     </section>
 
     <section class="hotels-list">
+      <form class="hotel-find" action="https://echo.htmlacademy.ru" method="post">
+        <div class="hotel-find-block">
+          <h3 class="topic-style topic-style-left">найдено: 3</h3>
+          <p class="small-text">сортировка:</p>
+          <div class="button-price-choice">
+            <input type="submit" name="price-choice" value="по цене" checked>
+          </div>
+          <div class="button-type-choice">
+            <input type="submit" name="type-choice" value="по типу">
+          </div>
+          <div class="button-rating-choice">
+            <input type="submit" name="rating-choice" value="по рейтингу">
+          </div>
+          <div class="choice-triang">
+            <button class="button-triang">
+              <img src="img/icon-up-dir.svg" width="10" alt="стрелка вверх">
+            </button>
+            <button class="button-triang">
+              <img src="img/icon-down-dir.svg" width="10" alt="стрелка вниз">
+            </button>
+          </div>
+        </div>
+      </form>
+
       <div class="hotel-stripe">
         <div class="img-box">
           <img src="img/layer-21.jpg" width="135" height="97" alt="amara resort & spa">
