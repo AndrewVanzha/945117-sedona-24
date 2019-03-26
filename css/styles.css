@@ -15,7 +15,6 @@ body {
 
 img {
   max-width: 100%;
-  /*  height: auto;*/
 }
 
 .main-header {
@@ -44,7 +43,6 @@ img {
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
-  /*  display: none;*/
   position: absolute;
   width: 1px;
   height: 1px;
@@ -78,6 +76,18 @@ input[type="radio"].visually-hidden {
   padding: 0;
   list-style: none;
   height: 56px;
+  display: -webkit-flex;
+  -webkit-justify-content: space-around;
+  -webkit-align-items: center;
+  -webkit-flex-wrap: nowrap;
+  display: -moz-flex;
+  -moz-justify-content: space-around;
+  -moz-align-items: center;
+  -moz-flex-wrap: nowrap;
+  display: -ms-flex;
+  -ms-justify-content: space-around;
+  -ms-align-items: center;
+  -ms-flex-wrap: nowrap;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -86,7 +96,6 @@ input[type="radio"].visually-hidden {
 
 .site-nav>li {
   display: block;
-  /*  margin: 0;*/
   width: 142px;
 }
 
@@ -183,6 +192,18 @@ input[type="radio"].visually-hidden {
 }
 
 .advantages-list {
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  -webkit-flex-wrap: nowrap;
+  display: -moz-flex;
+  -moz-justify-content: center;
+  -moz-align-items: center;
+  -moz-flex-wrap: nowrap;
+  display: -ms-flex;
+  -ms-justify-content: center;
+  -ms-align-items: center;
+  -ms-flex-wrap: nowrap;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -223,6 +244,21 @@ input[type="radio"].visually-hidden {
 }
 
 .advantages-details {
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  -webkit-align-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  display: -moz-flex;
+  -moz-justify-content: center;
+  -moz-align-items: center;
+  -moz-align-content: flex-start;
+  -moz-flex-wrap: wrap;
+  display: -ms-flex;
+  -ms-justify-content: center;
+  -ms-align-items: center;
+  -ms-align-content: flex-start;
+  -ms-flex-wrap: wrap;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -302,6 +338,18 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/filter-background.jpg");
   background-repeat: no-repeat;
   background-position: left -289px;
+  display: -webkit-flex;
+  -webkit-justify-content: space-around;
+  -webkit-align-items: stretch;
+  -webkit-flex-wrap: nowrap;
+  display: -moz-flex;
+  -moz-justify-content: space-around;
+  -moz-align-items: stretch;
+  -moz-flex-wrap: nowrap;
+  display: -ms-flex;
+  -ms-justify-content: space-around;
+  -ms-align-items: stretch;
+  -ms-flex-wrap: nowrap;
   display: flex;
   justify-content: space-around;
   align-items: stretch;
@@ -395,11 +443,14 @@ input[type="radio"].visually-hidden {
 
 .price-block {
   width: 700px;
+  position: relative;
 }
 
 .price-block>p,
 .price-range-box,
-.price-move,
+/*.price-move,*/
+.scale-bar-long,
+.scale-bar-short,
 .button-show-box {
   margin-left: 240px;
 }
@@ -409,6 +460,18 @@ input[type="radio"].visually-hidden {
   height: 32px;
   border: 2px solid rgba(256, 256, 256, 1);
   border-radius: 2px;
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  -webkit-flex-wrap: nowrap;
+  display: -moz-flex;
+  -moz-justify-content: center;
+  -moz-align-items: center;
+  -moz-flex-wrap: nowrap;
+  display: -ms-flex;
+  -ms-justify-content: center;
+  -ms-align-items: center;
+  -ms-flex-wrap: nowrap;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -416,7 +479,8 @@ input[type="radio"].visually-hidden {
 }
 
 .price-range-box,
-.price-move,
+/*.price-move,*/
+.scale-bar-long,
 .button-show-box {
   width: 314px;
 }
@@ -434,30 +498,42 @@ input[type="radio"].visually-hidden {
   border-right: 1px solid rgba(255, 255, 255, 1);
 }
 
-.price-move {
-  display: block;
+.scale-bar-long {
+  position: relative;
+  top: 19px;
   margin-top: 16px;
   margin-bottom: 0;
-  height: 22px;
+  height: 1px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.scale-bar-short {
+  margin-top: 16px;
+  margin-bottom: 0;
+  width: 235px;
+  height: 2px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .white-ball {
-  width: 10px;
-  height: 10px;
+  position: relative;
+  width: 8px;
+  height: 8px;
   background-color: rgba(200, 200, 200, 0.5);
   border: 9px solid rgba(255, 255, 255, 1);
   border-radius: 50%;
-  position: relative;
 }
 
 .left-ball {
-  top: -24px;
+  top: -15px;
   left: 240px;
 }
 
 .right-ball {
-  top: -52px;
-  left: 485px;
+  top: -41px;
+  left: 465px;
 }
 
 .button-show-box {
@@ -484,7 +560,6 @@ input[type="radio"].visually-hidden {
   width: auto;
   color: rgba(33, 33, 33, 1);
   background-color: rgba(256, 256, 256, 1);
-  /*  outline: 1px dashed darkslateblue;*/
 }
 
 .hotel-find {
@@ -498,6 +573,18 @@ input[type="radio"].visually-hidden {
   margin-left: 72px;
   width: auto;
   height: 86px;
+  display: -webkit-flex;
+  -webkit-justify-content: baseline;
+  -webkit-align-items: center;
+  -webkit-flex-wrap: nowrap;
+  display: -moz-flex;
+  -moz-justify-content: baseline;
+  -moz-align-items: center;
+  -moz-flex-wrap: nowrap;
+  display: -ms-flex;
+  -ms-justify-content: baseline;
+  -ms-align-items: center;
+  -ms-flex-wrap: nowrap;
   display: flex;
   justify-content: baseline;
   align-items: center;
@@ -588,18 +675,31 @@ input[type="radio"].visually-hidden {
 
 
 .hotel-stripe {
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  -webkit-flex-wrap: wrap;
+  display: -moz-flex;
+  -moz-justify-content: center;
+  -moz-align-items: center;
+  -moz-flex-wrap: wrap;
+  display: -ms-flex;
+  -ms-justify-content: center;
+  -ms-align-items: center;
+  -ms-flex-wrap: wrap;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  width: 1200px;
   height: 157px;
   border-bottom: 1px solid rgba(242, 242, 242, 1);
 }
 
-.hotels-list div:first-child {
-  border-top: 1px solid rgba(242, 242, 242, 1);
+.first-hotel-stripe {
+  border-top: 2px solid rgba(242, 242, 242, 1);
 }
 
 .img-box {
@@ -615,6 +715,18 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-left: 30px;
   padding: 0;
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  -webkit-flex-wrap: wrap;
+  display: -moz-flex;
+  -moz-justify-content: center;
+  -moz-align-items: center;
+  -moz-flex-wrap: wrap;
+  display: -ms-flex;
+  -ms-justify-content: center;
+  -ms-align-items: center;
+  -ms-flex-wrap: wrap;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -802,6 +914,21 @@ input[type="radio"].visually-hidden {
   padding: 55px;
   height: 173px;
   width: 452px;
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+  -webkit-align-content: space-between;
+  -webkit-align-items: center;
+  -webkit-flex-wrap: wrap;
+  display: -moz-flex;
+  -moz-justify-content: center;
+  -moz-align-content: space-between;
+  -moz-align-items: center;
+  -moz-flex-wrap: wrap;
+  display: -ms-flex;
+  -ms-justify-content: center;
+  -ms-align-content: space-between;
+  -ms-align-items: center;
+  -ms-flex-wrap: wrap;
   display: flex;
   justify-content: center;
   align-content: space-between;
@@ -944,6 +1071,18 @@ input[type="radio"].visually-hidden {
   padding: 0;
   width: 1200px;
   height: 120px;
+  display: -webkit-flex;
+  -webkit-justify-content: space-around;
+  -webkit-align-items: center;
+  -webkit-flex-wrap: nowrap;
+  display: -moz-flex;
+  -moz-justify-content: space-around;
+  -moz-align-items: center;
+  -moz-flex-wrap: nowrap;
+  display: -ms-flex;
+  -ms-justify-content: space-around;
+  -ms-align-items: center;
+  -ms-flex-wrap: nowrap;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -959,6 +1098,18 @@ input[type="radio"].visually-hidden {
 .social-block {
   margin: 0;
   padding: 0;
+  display: -webkit-flex;
+  -webkit-justify-content: space-around;
+  -webkit-align-items: center;
+  -webkit-flex-wrap: nowrap;
+  display: -moz-flex;
+  -moz-justify-content: space-around;
+  -moz-align-items: center;
+  -moz-flex-wrap: nowrap;
+  display: -ms-flex;
+  -ms-justify-content: space-around;
+  -ms-align-items: center;
+  -ms-flex-wrap: nowrap;
   display: flex;
   justify-content: space-around;
   align-items: center;
