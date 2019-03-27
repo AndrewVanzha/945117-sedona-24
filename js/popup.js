@@ -15,7 +15,6 @@ window.addEventListener("keydown", function (evnt) {
 link.addEventListener("click", function (evnt) {
   evnt.preventDefault();
   console.log(popup);
-/*      popup.classList.add("modal");*/
   popup.classList.toggle("modal");
   date1.focus();
 });
